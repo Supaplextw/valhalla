@@ -22,16 +22,16 @@
       "example_phrases": {
         "0": ["往東方走。", "往北方走。"],
         "1": ["在 5th Avenue 往西南方走。", "在人行道往西走", "在單車道往東騎乘", "沿著登山單車道往北騎乘"],
-        "2": ["在 North Prince Street/US 222/PA 272 往南方行駛。繼續延著 US 222/PA 272 行駛。"],
+        "2": ["在 North Prince Street/US 222/PA 272 往南方行駛。繼續沿 US 222/PA 272 行駛。"],
         "4": ["往東方行駛。", "往北方行駛。"],
         "5": ["在 5th Avenue 往西南方行駛。"],
-        "6": ["延著 North Prince Street/US 222/PA 272 往南方行駛，繼續延 US 222/PA 272 行駛。"],
+        "6": ["沿著 North Prince Street/US 222/PA 272 往南方行駛，繼續沿 US 222/PA 272 行駛。"],
         "8": ["往東方走。", "往北方走。"],
-        "9": ["沿著 5th Avenue 往西南方走。", "延著人行道往西方走"],
-        "10": ["沿著 North Prince Street/US 222/PA 272 往南方行走，繼續沿著 US 222/PA 272 行駛。"],
+        "9": ["沿著 5th Avenue 往西南方走。", "沿著人行道往西方走"],
+        "10": ["沿著 North Prince Street/US 222/PA 272 往南方行走，繼續沿 US 222/PA 272 行駛。"],
         "16": ["往東方騎乘。", "往北方騎乘。"],
         "17": ["沿著 5th Avenue 往西南方騎乘。", "沿著單車道往東方騎乘", "沿著登山單車道往北騎乘"],
-        "18": ["沿著 North Prince Street/US 222/PA 272 往北方騎乘，繼續沿著 US 222/PA 272 騎乘"]
+        "18": ["沿著 North Prince Street/US 222/PA 272 往北方騎乘，繼續沿 US 222/PA 272 騎乘"]
       }
     },
     "start_verbal": {
@@ -49,10 +49,10 @@
         "17": "往<CARDINAL_DIRECTION>沿<STREET_NAMES>騎乘<LENGTH>。",
         "18": "往<CARDINAL_DIRECTION>沿<BEGIN_STREET_NAMES>騎乘。"
       },
-      "cardinal_directions": ["north", "northeast", "east", "southeast", "south", "southwest", "west", "northwest"],
-      "empty_street_name_labels": ["the walkway", "the cycleway", "the mountain bike trail"],
-      "metric_lengths": ["<KILOMETERS> kilometers", "1 kilometer", "a half kilometer", "<METERS> meters", "less than 10 meters"],
-      "us_customary_lengths": ["<MILES> miles", "1 mile", "a half mile", "<TENTHS_OF_MILE> tenths of a mile", "1 tenth of a mile", "<FEET> feet", "less than 10 feet"],
+      "cardinal_directions": ["北", "東北", "東", "東南", "南", "西南", "西", "西北"],
+      "empty_street_name_labels": ["人行道", "自行車道", "越野自行車道"],
+      "metric_lengths": ["<KILOMETERS> 公里", "1 公里", "1/2 公里", "<METERS> 公尺", "少於 10 公尺"],
+      "us_customary_lengths": ["<MILES> 英里", "1 英里", "1/2 英里", "<TENTHS_OF_MILE>/10 英里", "1/10 英里", "<FEET> 英呎", "少於 10 英呎"],
       "example_phrases": {
         "0": ["Head east for a half mile.", "Head north for 1 kilometer."],
         "1": ["Head southwest on 5th Avenue for 1 tenth of a mile."],
@@ -70,17 +70,17 @@
     },
     "destination": {
       "phrases": {
-        "0": "You have arrived at your destination.",
-        "1": "You have arrived at <DESTINATION>.",
-        "2": "Your destination is on the <RELATIVE_DIRECTION>.",
-        "3": "<DESTINATION> is on the <RELATIVE_DIRECTION>."
+        "0": "您已抵達指定之目的地。",
+        "1": "您已抵達 <DESTINATION>。",
+        "2": "您的目的地將在<RELATIVE_DIRECTION>。",
+        "3": "<DESTINATION> 位於<RELATIVE_DIRECTION>。"
       },
-      "relative_directions": ["left", "right"],
+      "relative_directions": ["左方", "右方"],
       "example_phrases": {
-        "0": ["You have arrived at your destination."],
-        "1": ["You have arrived at 3206 Powelton Avenue."],
-        "2": ["Your destination is on the left.", "Your destination is on the right."],
-        "3": ["Lancaster Brewing Company is on the left."]
+        "0": ["您已抵達指定之目的地。"],
+        "1": ["您已抵達 3206 Powelton Avenue。"],
+        "2": ["您的目的地位於左方。", "您的目的地位於右方。"],
+        "3": ["Lancaster Brewing Company 位於您的左方。"]
       }
     },
     "destination_verbal_alert": {
@@ -90,7 +90,7 @@
         "2": "Your destination will be on the <RELATIVE_DIRECTION>.",
         "3": "<DESTINATION> will be on the <RELATIVE_DIRECTION>."
       },
-      "relative_directions": ["left", "right"],
+      "relative_directions": ["左方", "右方"],
       "example_phrases": {
         "0": ["You will arrive at your destination."],
         "1": ["You will arrive at 32 o6 Powelton Avenue."],
@@ -100,17 +100,17 @@
     },
     "destination_verbal": {
       "phrases": {
-        "0": "You have arrived at your destination.",
-        "1": "You have arrived at <DESTINATION>.",
-        "2": "Your destination is on the <RELATIVE_DIRECTION>.",
-        "3": "<DESTINATION> is on the <RELATIVE_DIRECTION>."
+        "0": "您已抵達指定之目的地。",
+        "1": "您已抵達 <DESTINATION>。",
+        "2": "您的目的地將在<RELATIVE_DIRECTION>。",
+        "3": "<DESTINATION> 位於<RELATIVE_DIRECTION>。"
       },
-      "relative_directions": ["left", "right"],
+      "relative_directions": ["左方", "右方"],
       "example_phrases": {
-        "0": ["You have arrived at your destination."],
-        "1": ["You have arrived at 32 o6 Powelton Avenue."],
-        "2": ["Your destination is on the left.", "Your destination is on the right."],
-        "3": ["Lancaster Brewing Company is on the left."]
+        "0": ["您已抵達指定之目的地。"],
+        "1": ["您已抵達 32 o6 Powelton Avenue."],
+        "2": ["您的目的地位於左方。", "您的目的地位於右方。"],
+        "3": ["Lancaster Brewing Company 位於您的左方。"]
       }
     },
     "becomes": {
@@ -131,24 +131,24 @@
     },
     "continue": {
       "phrases": {
-        "0": "Continue.",
-        "1": "Continue on <STREET_NAMES>."
+        "0": "繼續直行。",
+        "1": "繼續沿 <STREET_NAMES> 行駛。"
       },
-      "empty_street_name_labels": ["the walkway", "the cycleway", "the mountain bike trail"],
+      "empty_street_name_labels": ["人行道", "自行車道", "越野自行車道"],
       "example_phrases": {
-        "0": ["Continue."],
-        "1": ["Continue on 10th Avenue."]
+        "0": ["繼續直行。"],
+        "1": ["繼續沿 10th Avenue 行駛。"]
       }
     },
     "continue_verbal_alert": {
       "phrases": {
-        "0": "Continue.",
-        "1": "Continue on <STREET_NAMES>."
+        "0": "繼續直行。",
+        "1": "繼續沿 <STREET_NAMES> 行駛。"
       },
-      "empty_street_name_labels": ["the walkway", "the cycleway", "the mountain bike trail"],
+      "empty_street_name_labels": ["人行道", "自行車道", "越野自行車道"],
       "example_phrases": {
-        "0": ["Continue."],
-        "1": ["Continue on 10th Avenue."]
+        "0": ["繼續直行。"],
+        "1": ["繼續沿 10th Avenue 行駛。"]
       }
     },
     "continue_verbal": {
@@ -156,11 +156,11 @@
         "0": "Continue for <LENGTH>.",
         "1": "Continue on <STREET_NAMES> for <LENGTH>."
       },
-      "empty_street_name_labels": ["the walkway", "the cycleway", "the mountain bike trail"],
-      "metric_lengths": ["<KILOMETERS> kilometers", "1 kilometer", "a half kilometer", "<METERS> meters", "less than 10 meters"],
-      "us_customary_lengths": ["<MILES> miles", "1 mile", "a half mile", "<TENTHS_OF_MILE> tenths of a mile", "1 tenth of a mile", "<FEET> feet", "less than 10 feet"],
+      "empty_street_name_labels": ["人行道", "自行車道", "越野自行車道"],
+      "metric_lengths": ["<KILOMETERS> 公里", "1 公里", "1/2 公里", "<METERS> 公尺", "少於 10 公尺"],
+      "us_customary_lengths": ["<MILES> 英里", "1 英里", "1/2 英里", "<TENTHS_OF_MILE>/10 英里", "1/10 英里", "<FEET> 英呎", "少於 10 英呎"],
       "example_phrases": {
-        "0": ["Continue for 300 feet."],
+        "0": ["繼續直行 300 英呎。"],
         "1": ["Continue on 10th Avenue for 3 tenths of a mile."]
       }
     },
@@ -168,11 +168,11 @@
       "phrases": {
         "0": "Bear <RELATIVE_DIRECTION>.",
         "1": "Bear <RELATIVE_DIRECTION> onto <STREET_NAMES>.",
-        "2": "Bear <RELATIVE_DIRECTION> onto <BEGIN_STREET_NAMES>. Continue on <STREET_NAMES>.",
+        "2": "Bear <RELATIVE_DIRECTION> onto <BEGIN_STREET_NAMES>. 繼續沿 <STREET_NAMES> 行駛。",
         "3": "Bear <RELATIVE_DIRECTION> to stay on <STREET_NAMES>."
       },
-      "relative_directions": ["left", "right"],
-      "empty_street_name_labels": ["the walkway", "the cycleway", "the mountain bike trail"],
+      "relative_directions": ["左", "右"],
+      "empty_street_name_labels": ["人行道", "自行車道", "越野自行車道"],
       "example_phrases": {
         "0": ["Bear right."],
         "1": ["Bear left onto Arlen Road."],
@@ -187,8 +187,8 @@
         "2": "Bear <RELATIVE_DIRECTION> onto <BEGIN_STREET_NAMES>.",
         "3": "Bear <RELATIVE_DIRECTION> to stay on <STREET_NAMES>."
       },
-      "relative_directions": ["left", "right"],
-      "empty_street_name_labels": ["the walkway", "the cycleway", "the mountain bike trail"],
+      "relative_directions": ["左", "右"],
+      "empty_street_name_labels": ["人行道", "自行車道", "越野自行車道"],
       "example_phrases": {
         "0": ["Bear right."],
         "1": ["Bear left onto Arlen Road."],
@@ -200,11 +200,11 @@
       "phrases": {
         "0": "Turn <RELATIVE_DIRECTION>.",
         "1": "Turn <RELATIVE_DIRECTION> onto <STREET_NAMES>.",
-        "2": "Turn <RELATIVE_DIRECTION> onto <BEGIN_STREET_NAMES>. Continue on <STREET_NAMES>.",
+        "2": "Turn <RELATIVE_DIRECTION> onto <BEGIN_STREET_NAMES>. 繼續沿 <STREET_NAMES> 行駛。",
         "3": "Turn <RELATIVE_DIRECTION> to stay on <STREET_NAMES>."
       },
-      "relative_directions": ["left", "right"],
-      "empty_street_name_labels": ["the walkway", "the cycleway", "the mountain bike trail"],
+      "relative_directions": ["左", "右"],
+      "empty_street_name_labels": ["人行道", "自行車道", "越野自行車道"],
       "example_phrases": {
         "0": ["Turn left."],
         "1": ["Turn right onto Flatbush Avenue."],
@@ -219,8 +219,8 @@
         "2": "Turn <RELATIVE_DIRECTION> onto <BEGIN_STREET_NAMES>.",
         "3": "Turn <RELATIVE_DIRECTION> to stay on <STREET_NAMES>."
       },
-      "relative_directions": ["left", "right"],
-      "empty_street_name_labels": ["the walkway", "the cycleway", "the mountain bike trail"],
+      "relative_directions": ["左", "右"],
+      "empty_street_name_labels": ["人行道", "自行車道", "越野自行車道"],
       "example_phrases": {
         "0": ["Turn left."],
         "1": ["Turn right onto Flatbush Avenue."],
@@ -232,11 +232,11 @@
       "phrases": {
         "0": "Turn sharp <RELATIVE_DIRECTION>.",
         "1": "Turn sharp <RELATIVE_DIRECTION> onto <STREET_NAMES>.",
-        "2": "Turn sharp <RELATIVE_DIRECTION> onto <BEGIN_STREET_NAMES>. Continue on <STREET_NAMES>.",
+        "2": "Turn sharp <RELATIVE_DIRECTION> onto <BEGIN_STREET_NAMES>. 繼續沿 <STREET_NAMES> 行駛。",
         "3": "Turn sharp <RELATIVE_DIRECTION> to stay on <STREET_NAMES>."
       },
-      "relative_directions": ["left", "right"],
-      "empty_street_name_labels": ["the walkway", "the cycleway", "the mountain bike trail"],
+      "relative_directions": ["左", "右"],
+      "empty_street_name_labels": ["人行道", "自行車道", "越野自行車道"],
       "example_phrases": {
         "0": ["Turn sharp left."],
         "1": ["Turn sharp right onto Flatbush Avenue."],
@@ -251,8 +251,8 @@
         "2": "Turn sharp <RELATIVE_DIRECTION> onto <BEGIN_STREET_NAMES>.",
         "3": "Turn sharp <RELATIVE_DIRECTION> to stay on <STREET_NAMES>."
       },
-      "relative_directions": ["left", "right"],
-      "empty_street_name_labels": ["the walkway", "the cycleway", "the mountain bike trail"],
+      "relative_directions": ["左", "右"],
+      "empty_street_name_labels": ["人行道", "自行車道", "越野自行車道"],
       "example_phrases": {
         "0": ["Turn sharp left."],
         "1": ["Turn sharp right onto Flatbush Avenue."],
@@ -269,8 +269,8 @@
         "4": "Make a <RELATIVE_DIRECTION> U-turn at <CROSS_STREET_NAMES> onto <STREET_NAMES>.",
         "5": "Make a <RELATIVE_DIRECTION> U-turn at <CROSS_STREET_NAMES> to stay on <STREET_NAMES>."
       },
-      "relative_directions": ["left", "right"],
-      "empty_street_name_labels": ["the walkway", "the cycleway", "the mountain bike trail"],
+      "relative_directions": ["左", "右"],
+      "empty_street_name_labels": ["人行道", "自行車道", "越野自行車道"],
       "example_phrases": {
         "0": ["Make a left U-turn."],
         "1": ["Make a right U-turn onto Bunker Hill Road."],
@@ -289,8 +289,8 @@
         "4": "Make a <RELATIVE_DIRECTION> U-turn at <CROSS_STREET_NAMES> onto <STREET_NAMES>.",
         "5": "Make a <RELATIVE_DIRECTION> U-turn at <CROSS_STREET_NAMES> to stay on <STREET_NAMES>."
       },
-      "relative_directions": ["left", "right"],
-      "empty_street_name_labels": ["the walkway", "the cycleway", "the mountain bike trail"],
+      "relative_directions": ["左", "右"],
+      "empty_street_name_labels": ["人行道", "自行車道", "越野自行車道"],
       "example_phrases": {
         "0": ["Make a left U-turn."],
         "1": ["Make a right U-turn onto Bunker Hill Road."],
@@ -302,150 +302,150 @@
     },
     "ramp_straight": {
       "phrases": {
-        "0": "Stay straight to take the ramp.",
-        "1": "Stay straight to take the <BRANCH_SIGN> ramp.",
-        "2": "Stay straight to take the ramp toward <TOWARD_SIGN>.",
-        "3": "Stay straight to take the <BRANCH_SIGN> ramp toward <TOWARD_SIGN>.",
-        "4": "Stay straight to take the <NAME_SIGN> ramp."
+        "0": "保持直行進入匝道。",
+        "1": "保持直行進入 <BRANCH_SIGN> 匝道。",
+        "2": "保持直行進入匝道往 <TOWARD_SIGN>.",
+        "3": "保持直行進入 <BRANCH_SIGN> ramp toward <TOWARD_SIGN>.",
+        "4": "保持直行進入 <NAME_SIGN> 匝道。"
       },
       "example_phrases": {
-        "0": ["Stay straight to take the ramp."],
-        "1": ["Stay straight to take the US 322 East ramp."],
-        "2": ["Stay straight to take the ramp toward Hershey."],
-        "3": ["Stay straight to take the US 322 East/US 422 East/US 522 East/US 622 East ramp toward Hershey/Palmdale/Palmyra/Campbelltown."],
-        "4": ["Stay straight to take the Gettysburg Pike ramp."]
+        "0": ["保持直行進入匝道。"],
+        "1": ["保持直行進入 US 322 East 匝道。"],
+        "2": ["保持直行進入匝道往 Hershey."],
+        "3": ["保持直行進入 US 322 East/US 422 East/US 522 East/US 622 East ramp toward Hershey/Palmdale/Palmyra/Campbelltown."],
+        "4": ["保持直行進入 Gettysburg Pike 匝道。"]
       }
     },
     "ramp_straight_verbal": {
       "phrases": {
-        "0": "Stay straight to take the ramp.",
-        "1": "Stay straight to take the <BRANCH_SIGN> ramp.",
-        "2": "Stay straight to take the ramp toward <TOWARD_SIGN>.",
-        "3": "Stay straight to take the <BRANCH_SIGN> ramp toward <TOWARD_SIGN>.",
-        "4": "Stay straight to take the <NAME_SIGN> ramp."
+        "0": "保持直行進入匝道。",
+        "1": "保持直行進入 <BRANCH_SIGN> 匝道。",
+        "2": "保持直行進入匝道往 <TOWARD_SIGN>.",
+        "3": "保持直行進入 <BRANCH_SIGN> ramp toward <TOWARD_SIGN>.",
+        "4": "保持直行進入 <NAME_SIGN> 匝道。"
       },
       "example_phrases": {
-        "0": ["Stay straight to take the ramp."],
-        "1": ["Stay straight to take the U.S. 3 22 East ramp."],
-        "2": ["Stay straight to take the ramp toward Hershey."],
-        "3": ["Stay straight to take the U.S. 3 22 East, U.S. 4 22 East ramp toward Hershey, Palmdale."],
-        "4": ["Stay straight to take the Gettysburg Pike ramp."]
+        "0": ["保持直行進入匝道。"],
+        "1": ["保持直行進入 U.S. 3 22 East 匝道。"],
+        "2": ["保持直行進入匝道往 Hershey."],
+        "3": ["保持直行進入 U.S. 3 22 East, U.S. 4 22 East ramp toward Hershey, Palmdale."],
+        "4": ["保持直行進入 Gettysburg Pike 匝道。"]
       }
     },
     "ramp": {
       "phrases": {
-        "0": "Take the ramp on the <RELATIVE_DIRECTION>.",
-        "1": "Take the <BRANCH_SIGN> ramp on the <RELATIVE_DIRECTION>.",
-        "2": "Take the ramp on the <RELATIVE_DIRECTION> toward <TOWARD_SIGN>.",
-        "3": "Take the <BRANCH_SIGN> ramp on the <RELATIVE_DIRECTION> toward <TOWARD_SIGN>.",
-        "4": "Take the <NAME_SIGN> ramp on the <RELATIVE_DIRECTION>.",
-        "5": "Turn <RELATIVE_DIRECTION> to take the ramp.",
-        "6": "Turn <RELATIVE_DIRECTION> to take the <BRANCH_SIGN> ramp.",
-        "7": "Turn <RELATIVE_DIRECTION> to take the ramp toward <TOWARD_SIGN>.",
-        "8": "Turn <RELATIVE_DIRECTION> to take the <BRANCH_SIGN> ramp toward <TOWARD_SIGN>.",
-        "9": "Turn <RELATIVE_DIRECTION> to take the <NAME_SIGN> ramp."
+        "0": "Take ramp on the <RELATIVE_DIRECTION>.",
+        "1": "Take <BRANCH_SIGN> ramp on the <RELATIVE_DIRECTION>.",
+        "2": "Take ramp on the <RELATIVE_DIRECTION> toward <TOWARD_SIGN>.",
+        "3": "Take <BRANCH_SIGN> ramp on the <RELATIVE_DIRECTION> toward <TOWARD_SIGN>.",
+        "4": "Take <NAME_SIGN> ramp on the <RELATIVE_DIRECTION>.",
+        "5": "Turn <RELATIVE_DIRECTION> to 搭乘 匝道。",
+        "6": "Turn <RELATIVE_DIRECTION> to Take <BRANCH_SIGN> 匝道。",
+        "7": "Turn <RELATIVE_DIRECTION> to Take ramp toward <TOWARD_SIGN>.",
+        "8": "Turn <RELATIVE_DIRECTION> to Take <BRANCH_SIGN> ramp toward <TOWARD_SIGN>.",
+        "9": "Turn <RELATIVE_DIRECTION> to Take <NAME_SIGN> 匝道。"
       },
-      "relative_directions": ["left", "right"],
+      "relative_directions": ["左", "右"],
       "example_phrases": {
-        "0": ["Take the ramp on the left.", "Take the ramp on the right."],
-        "1": ["Take the I 95 ramp on the right."],
-        "2": ["Take the ramp on the left toward JFK."],
-        "3": ["Take the South Conduit Avenue ramp on the left toward JFK."],
-        "4": ["Take the Gettysburg Pike ramp on the right."],
-        "5": ["Turn left to take the ramp.", "Turn right to take the ramp."],
-        "6": ["Turn left to take the PA 283 West ramp."],
-        "7": ["Turn left to take the ramp toward Harrisburg/Harrisburg International Airport."],
-        "8": ["Turn left to take the PA 283 West ramp toward Harrisburg/Harrisburg International Airport."],
-        "9": ["Turn right to take the Gettysburg Pike ramp."]
+        "0": ["進入左側匝道。", "進入右側匝道。"],
+        "1": ["Take I 95 ramp on the right."],
+        "2": ["Take ramp on the left toward JFK."],
+        "3": ["Take South Conduit Avenue ramp on the left toward JFK."],
+        "4": ["Take Gettysburg Pike ramp on the right."],
+        "5": ["左轉進入匝道。", "右轉進入匝道。"],
+        "6": ["Turn left to take PA 283 West 匝道。"],
+        "7": ["Turn left to Take ramp toward Harrisburg/Harrisburg International Airport."],
+        "8": ["Turn left to take PA 283 West ramp toward Harrisburg/Harrisburg International Airport."],
+        "9": ["右轉進入 Gettysburg Pike 匝道。"]
       }
     },
     "ramp_verbal": {
       "phrases": {
-        "0": "Take the ramp on the <RELATIVE_DIRECTION>.",
-        "1": "Take the <BRANCH_SIGN> ramp on the <RELATIVE_DIRECTION>.",
-        "2": "Take the ramp on the <RELATIVE_DIRECTION> toward <TOWARD_SIGN>.",
-        "3": "Take the <BRANCH_SIGN> ramp on the <RELATIVE_DIRECTION> toward <TOWARD_SIGN>.",
-        "4": "Take the <NAME_SIGN> ramp on the <RELATIVE_DIRECTION>.",
-        "5": "Turn <RELATIVE_DIRECTION> to take the ramp.",
-        "6": "Turn <RELATIVE_DIRECTION> to take the <BRANCH_SIGN> ramp.",
-        "7": "Turn <RELATIVE_DIRECTION> to take the ramp toward <TOWARD_SIGN>.",
-        "8": "Turn <RELATIVE_DIRECTION> to take the <BRANCH_SIGN> ramp toward <TOWARD_SIGN>.",
-        "9": "Turn <RELATIVE_DIRECTION> to take the <NAME_SIGN> ramp."
+        "0": "Take ramp on the <RELATIVE_DIRECTION>.",
+        "1": "Take <BRANCH_SIGN> ramp on the <RELATIVE_DIRECTION>.",
+        "2": "Take ramp on the <RELATIVE_DIRECTION> toward <TOWARD_SIGN>.",
+        "3": "Take <BRANCH_SIGN> ramp on the <RELATIVE_DIRECTION> toward <TOWARD_SIGN>.",
+        "4": "Take <NAME_SIGN> ramp on the <RELATIVE_DIRECTION>.",
+        "5": "Turn <RELATIVE_DIRECTION> to 搭乘 匝道。",
+        "6": "Turn <RELATIVE_DIRECTION> to Take <BRANCH_SIGN> 匝道。",
+        "7": "Turn <RELATIVE_DIRECTION> to Take ramp toward <TOWARD_SIGN>.",
+        "8": "Turn <RELATIVE_DIRECTION> to Take <BRANCH_SIGN> ramp toward <TOWARD_SIGN>.",
+        "9": "Turn <RELATIVE_DIRECTION> to Take <NAME_SIGN> 匝道。"
       },
-      "relative_directions": ["left", "right"],
+      "relative_directions": ["左", "右"],
       "example_phrases": {
-        "0": ["Take the ramp on the left.", "Take the ramp on the right."],
-        "1": ["Take the Interstate 95 ramp on the right."],
-        "2": ["Take the ramp on the left toward JFK."],
-        "3": ["Take the South Conduit Avenue ramp on the left toward JFK."],
-        "4": ["Take the Gettysburg Pike ramp on the right."],
-        "5": ["Turn left to take the ramp.", "Turn right to take the ramp."],
-        "6": ["Turn left to take the Pennsylvania 2 83 West ramp."],
-        "7": ["Turn left to take the ramp toward Harrisburg/Harrisburg International Airport."],
-        "8": ["Turn left to take the Pennsylvania 2 83 West ramp toward Harrisburg, Harrisburg International Airport."],
-        "9": ["Turn right to take the Gettysburg Pike ramp."]
+        "0": ["進入左側匝道。", "進入右側匝道。"],
+        "1": ["Take Interstate 95 ramp on the right."],
+        "2": ["Take ramp on the left toward JFK."],
+        "3": ["Take South Conduit Avenue ramp on the left toward JFK."],
+        "4": ["Take Gettysburg Pike ramp on the right."],
+        "5": ["左轉進入匝道。", "右轉進入匝道。"],
+        "6": ["Turn left to Take Pennsylvania 2 83 West 匝道。"],
+        "7": ["Turn left to Take ramp toward Harrisburg/Harrisburg International Airport."],
+        "8": ["Turn left to Take Pennsylvania 2 83 West ramp toward Harrisburg, Harrisburg International Airport."],
+        "9": ["右轉進入 Gettysburg Pike 匝道。"]
       }
     },
     "exit": {
       "phrases": {
-        "0": "Take the exit on the <RELATIVE_DIRECTION>.",
+        "0": "Take exit on the <RELATIVE_DIRECTION>.",
         "1": "Take exit <NUMBER_SIGN> on the <RELATIVE_DIRECTION>.",
-        "2": "Take the <BRANCH_SIGN> exit on the <RELATIVE_DIRECTION>.",
+        "2": "Take <BRANCH_SIGN> exit on the <RELATIVE_DIRECTION>.",
         "3": "Take exit <NUMBER_SIGN> on the <RELATIVE_DIRECTION> onto <BRANCH_SIGN>.",
-        "4": "Take the exit on the <RELATIVE_DIRECTION> toward <TOWARD_SIGN>.",
+        "4": "Take exit on the <RELATIVE_DIRECTION> toward <TOWARD_SIGN>.",
         "5": "Take exit <NUMBER_SIGN> on the <RELATIVE_DIRECTION> toward <TOWARD_SIGN>.",
-        "6": "Take the <BRANCH_SIGN> exit on the <RELATIVE_DIRECTION> toward <TOWARD_SIGN>.",
+        "6": "Take <BRANCH_SIGN> exit on the <RELATIVE_DIRECTION> toward <TOWARD_SIGN>.",
         "7": "Take exit <NUMBER_SIGN> on the <RELATIVE_DIRECTION> onto <BRANCH_SIGN> toward <TOWARD_SIGN>.",
-        "8": "Take the <NAME_SIGN> exit on the <RELATIVE_DIRECTION>.",
-        "10": "Take the <NAME_SIGN> exit on the <RELATIVE_DIRECTION> onto <BRANCH_SIGN>.",
-        "12": "Take the <NAME_SIGN> exit on the <RELATIVE_DIRECTION> toward <TOWARD_SIGN>.",
-        "14": "Take the <NAME_SIGN> exit on the <RELATIVE_DIRECTION> onto <BRANCH_SIGN> toward <TOWARD_SIGN>."
+        "8": "Take <NAME_SIGN> exit on the <RELATIVE_DIRECTION>.",
+        "10": "Take <NAME_SIGN> exit on the <RELATIVE_DIRECTION> onto <BRANCH_SIGN>.",
+        "12": "Take <NAME_SIGN> exit on the <RELATIVE_DIRECTION> toward <TOWARD_SIGN>.",
+        "14": "Take <NAME_SIGN> exit on the <RELATIVE_DIRECTION> onto <BRANCH_SIGN> toward <TOWARD_SIGN>."
       },
-      "relative_directions": ["left", "right"],
+      "relative_directions": ["左", "右"],
       "example_phrases": {
-        "0": ["Take the exit on the left.", "Take the exit on the right."],
+        "0": ["Take exit on the left.", "Take exit on the right."],
         "1": ["Take exit 67 B-A on the right."],
-        "2": ["Take the US 322 West exit on the right."],
+        "2": ["Take US 322 West exit on the right."],
         "3": ["Take exit 67 B-A on the right onto US 322 West."],
-        "4": ["Take the exit on the right toward Lewistown."],
+        "4": ["Take exit on the right toward Lewistown."],
         "5": ["Take exit 67 B-A on the right toward Lewistown."],
-        "6": ["Take the US 322 West exit on the right toward Lewistown."],
+        "6": ["Take US 322 West exit on the right toward Lewistown."],
         "7": ["Take exit 67 B-A on the right onto US 322 West toward Lewistown/State College."],
-        "8": ["Take the White Marsh Boulevard exit on the left."],
-        "10": ["Take the White Marsh Boulevard exit on the left onto MD 43 East."],
-        "12": ["Take the White Marsh Boulevard exit on the left toward White Marsh."],
-        "14": ["Take the White Marsh Boulevard exit on the left onto MD 43 East toward White Marsh."]
+        "8": ["Take White Marsh Boulevard exit on the left."],
+        "10": ["Take White Marsh Boulevard exit on the left onto MD 43 East."],
+        "12": ["Take White Marsh Boulevard exit on the left toward White Marsh."],
+        "14": ["Take White Marsh Boulevard exit on the left onto MD 43 East toward White Marsh."]
       }
     },
     "exit_verbal": {
       "phrases": {
-        "0": "Take the exit on the <RELATIVE_DIRECTION>.",
+        "0": "Take exit on the <RELATIVE_DIRECTION>.",
         "1": "Take exit <NUMBER_SIGN> on the <RELATIVE_DIRECTION>.",
-        "2": "Take the <BRANCH_SIGN> exit on the <RELATIVE_DIRECTION>.",
+        "2": "Take <BRANCH_SIGN> exit on the <RELATIVE_DIRECTION>.",
         "3": "Take exit <NUMBER_SIGN> on the <RELATIVE_DIRECTION> onto <BRANCH_SIGN>.",
-        "4": "Take the exit on the <RELATIVE_DIRECTION> toward <TOWARD_SIGN>.",
+        "4": "Take exit on the <RELATIVE_DIRECTION> toward <TOWARD_SIGN>.",
         "5": "Take exit <NUMBER_SIGN> on the <RELATIVE_DIRECTION> toward <TOWARD_SIGN>.",
-        "6": "Take the <BRANCH_SIGN> exit on the <RELATIVE_DIRECTION> toward <TOWARD_SIGN>.",
+        "6": "Take <BRANCH_SIGN> exit on the <RELATIVE_DIRECTION> toward <TOWARD_SIGN>.",
         "7": "Take exit <NUMBER_SIGN> on the <RELATIVE_DIRECTION> onto <BRANCH_SIGN> toward <TOWARD_SIGN>.",
-        "8": "Take the <NAME_SIGN> exit on the <RELATIVE_DIRECTION>.",
-        "10": "Take the <NAME_SIGN> exit on the <RELATIVE_DIRECTION> onto <BRANCH_SIGN>.",
-        "12": "Take the <NAME_SIGN> exit on the <RELATIVE_DIRECTION> toward <TOWARD_SIGN>.",
-        "14": "Take the <NAME_SIGN> exit on the <RELATIVE_DIRECTION> onto <BRANCH_SIGN> toward <TOWARD_SIGN>."
+        "8": "Take <NAME_SIGN> exit on the <RELATIVE_DIRECTION>.",
+        "10": "Take <NAME_SIGN> exit on the <RELATIVE_DIRECTION> onto <BRANCH_SIGN>.",
+        "12": "Take <NAME_SIGN> exit on the <RELATIVE_DIRECTION> toward <TOWARD_SIGN>.",
+        "14": "Take <NAME_SIGN> exit on the <RELATIVE_DIRECTION> onto <BRANCH_SIGN> toward <TOWARD_SIGN>."
       },
-      "relative_directions": ["left", "right"],
+      "relative_directions": ["左", "右"],
       "example_phrases": {
-        "0": ["Take the exit on the left.", "Take the exit on the right."],
+        "0": ["Take exit on the left.", "Take exit on the right."],
         "1": ["Take exit 67 B-A on the right."],
-        "2": ["Take the U.S. 3 22 West exit on the right."],
+        "2": ["Take U.S. 3 22 West exit on the right."],
         "3": ["Take exit 67 B-A on the right onto U.S. 3 22 West."],
-        "4": ["Take the exit on the right toward Lewistown."],
+        "4": ["Take exit on the right toward Lewistown."],
         "5": ["Take exit 67 B-A on the right toward Lewistown."],
-        "6": ["Take the U.S. 3 22 West exit on the right toward Lewistown."],
+        "6": ["Take U.S. 3 22 West exit on the right toward Lewistown."],
         "7": ["Take exit 67 B-A on the right onto U.S. 3 22 West toward Lewistown, State College."],
-        "8": ["Take the White Marsh Boulevard exit on the left."],
-        "10": ["Take the White Marsh Boulevard exit on the left onto Maryland 43 East."],
-        "12": ["Take the White Marsh Boulevard exit on the left toward White Marsh."],
-        "14": ["Take the White Marsh Boulevard exit on the left onto Maryland 43 East toward White Marsh."]
+        "8": ["Take White Marsh Boulevard exit on the left."],
+        "10": ["Take White Marsh Boulevard exit on the left onto Maryland 43 East."],
+        "12": ["Take White Marsh Boulevard exit on the left toward White Marsh."],
+        "14": ["Take White Marsh Boulevard exit on the left onto Maryland 43 East toward White Marsh."]
       }
     },
     "keep": {
@@ -460,7 +460,7 @@
         "7": "Keep <RELATIVE_DIRECTION> to take exit <NUMBER_SIGN> onto <STREET_NAMES> toward <TOWARD_SIGN>."
       },
       "relative_directions": ["left", "straight", "right"],
-      "empty_street_name_labels": ["the walkway", "the cycleway", "the mountain bike trail"],
+      "empty_street_name_labels": ["人行道", "自行車道", "越野自行車道"],
       "example_phrases": {
         "0": ["Keep left at the fork.", "Keep straight at the fork.", "Keep right at the fork."],
         "1": ["Keep right to take exit 62."],
@@ -484,7 +484,7 @@
         "7": "Keep <RELATIVE_DIRECTION> to take exit <NUMBER_SIGN> onto <STREET_NAMES> toward <TOWARD_SIGN>."
       },
       "relative_directions": ["left", "straight", "right"],
-      "empty_street_name_labels": ["the walkway", "the cycleway", "the mountain bike trail"],
+      "empty_street_name_labels": ["人行道", "自行車道", "越野自行車道"],
       "example_phrases": {
         "0": ["Keep left at the fork.", "Keep straight at the fork.", "Keep right at the fork."],
         "1": ["Keep right to take exit 62."],
@@ -504,7 +504,7 @@
         "3": "Keep <RELATIVE_DIRECTION> to take exit <NUMBER_SIGN> to stay on <STREET_NAMES> toward <TOWARD_SIGN>."
       },
       "relative_directions": ["left", "straight", "right"],
-      "empty_street_name_labels": ["the walkway", "the cycleway", "the mountain bike trail"],
+      "empty_street_name_labels": ["人行道", "自行車道", "越野自行車道"],
       "example_phrases": {
         "0": ["Keep left to stay on I 95 South.", "Keep straight to stay on I 95 South.", "Keep right to stay on I 95 South."],
         "1": ["Keep left to take exit 62 to stay on I 95 South."],
@@ -520,7 +520,7 @@
         "3": "Keep <RELATIVE_DIRECTION> to take exit <NUMBER_SIGN> to stay on <STREET_NAMES> toward <TOWARD_SIGN>."
       },
       "relative_directions": ["left", "straight", "right"],
-      "empty_street_name_labels": ["the walkway", "the cycleway", "the mountain bike trail"],
+      "empty_street_name_labels": ["人行道", "自行車道", "越野自行車道"],
       "example_phrases": {
         "0": ["Keep left to stay on Interstate 95 South.", "Keep straight to stay on Interstate 95 South.", "Keep right to stay on Interstate 95 South."],
         "1": ["Keep left to take exit 62 to stay on Interstate 95 South."],
@@ -533,7 +533,7 @@
         "0": "Merge.",
         "1": "Merge onto <STREET_NAMES>."
       },
-      "empty_street_name_labels": ["the walkway", "the cycleway", "the mountain bike trail"],
+      "empty_street_name_labels": ["人行道", "自行車道", "越野自行車道"],
       "example_phrases": {
         "0": ["Merge."],
         "1": ["Merge onto I 76 West/Pennsylvania Turnpike."]
@@ -544,7 +544,7 @@
         "0": "Merge.",
         "1": "Merge onto <STREET_NAMES>."
       },
-      "empty_street_name_labels": ["the walkway", "the cycleway", "the mountain bike trail"],
+      "empty_street_name_labels": ["人行道", "自行車道", "越野自行車道"],
       "example_phrases": {
         "0": ["Merge."],
         "1": ["Merge onto Interstate 76 West, Pennsylvania Turnpike."]
@@ -552,119 +552,119 @@
     },
     "enter_roundabout": {
       "phrases": {
-        "0": "Enter the roundabout.",
-        "1": "Enter the roundabout and take the <ORDINAL_VALUE> exit."
+        "0": "進入圓環。",
+        "1": "進入圓環並從<ORDINAL_VALUE>出口離開。"
       },
-      "ordinal_values": ["1st", "2nd", "3rd", "4th", "5th", "6th", "7th", "8th", "9th", "10th"],
+      "ordinal_values": ["第一個", "第二個", "第三個", "第四個", "第五個", "第六個", "第七個", "第八個", "第九個", "第十個"],
       "example_phrases": {
-        "0": ["Enter the roundabout."],
+        "0": ["進入圓環。"],
         "1": [
-          "Enter the roundabout and take the 1st exit.",
-          "Enter the roundabout and take the 2nd exit.",
-          "Enter the roundabout and take the 3rd exit.",
-          "Enter the roundabout and take the 4th exit.",
-          "Enter the roundabout and take the 5th exit.",
-          "Enter the roundabout and take the 6th exit.",
-          "Enter the roundabout and take the 7th exit.",
-          "Enter the roundabout and take the 8th exit.",
-          "Enter the roundabout and take the 9th exit.",
-          "Enter the roundabout and take the 10th exit."
+          "進入圓環並從首個出口離開。",
+          "進入圓環並從第二個出口離開。",
+          "進入圓環並從第三個出口離開。",
+          "進入圓環並從第四個出口離開。",
+          "進入圓環並從第五個出口離開。",
+          "進入圓環並從第六個出口離開。",
+          "進入圓環並從第七個出口離開。",
+          "進入圓環並從第八個出口離開。",
+          "進入圓環並從第九個出口離開。",
+          "進入圓環並從第十個出口離開。"
         ]
       }
     },
     "enter_roundabout_verbal": {
       "phrases": {
-        "0": "Enter the roundabout.",
-        "1": "Enter the roundabout and take the <ORDINAL_VALUE> exit."
+        "0": "進入圓環。",
+        "1": "進入圓環並從<ORDINAL_VALUE>出口離開。"
       },
-      "ordinal_values": ["1st", "2nd", "3rd", "4th", "5th", "6th", "7th", "8th", "9th", "10th"],
+      "ordinal_values": ["第一個", "第二個", "第三個", "第四個", "第五個", "第六個", "第七個", "第八個", "第九個", "第十個"],
       "example_phrases": {
-        "0": ["Enter the roundabout."],
+        "0": ["進入圓環。"],
         "1": [
-          "Enter the roundabout and take the 1st exit.",
-          "Enter the roundabout and take the 2nd exit.",
-          "Enter the roundabout and take the 3rd exit.",
-          "Enter the roundabout and take the 4th exit.",
-          "Enter the roundabout and take the 5th exit.",
-          "Enter the roundabout and take the 6th exit.",
-          "Enter the roundabout and take the 7th exit.",
-          "Enter the roundabout and take the 8th exit.",
-          "Enter the roundabout and take the 9th exit.",
-          "Enter the roundabout and take the 10th exit."
+          "進入圓環並從第一個出口離開。",
+          "進入圓環並從第二個出口離開。",
+          "進入圓環並從第三個出口離開。",
+          "進入圓環並從第四個出口離開。",
+          "進入圓環並從第五個出口離開。",
+          "進入圓環並從第六個出口離開。",
+          "進入圓環並從第七個出口離開。",
+          "進入圓環並從第八個出口離開。",
+          "進入圓環並從第九個出口離開。",
+          "進入圓環並從第十個出口離開。"
         ]
       }
     },
     "exit_roundabout": {
       "phrases": {
-        "0": "Exit the roundabout.",
+        "0": "離開圓環。",
         "1": "Exit the roundabout onto <STREET_NAMES>.",
-        "2": "Exit the roundabout onto <BEGIN_STREET_NAMES>. Continue on <STREET_NAMES>."
+        "2": "Exit the roundabout onto <BEGIN_STREET_NAMES>. 繼續沿 <STREET_NAMES> 行駛。"
       },
-      "empty_street_name_labels": ["the walkway", "the cycleway", "the mountain bike trail"],
+      "empty_street_name_labels": ["人行道", "自行車道", "越野自行車道"],
       "example_phrases": {
-        "0": ["Exit the roundabout."],
+        "0": ["離開圓環。"],
         "1": ["Exit the roundabout onto Philadelphia Road/MD 7."],
         "2": ["Exit the roundabout onto Catoctin Mountain Highway/US 15. Continue on US 15."]
       }
     },
     "exit_roundabout_verbal": {
       "phrases": {
-        "0": "Exit the roundabout.",
+        "0": "離開圓環。",
         "1": "Exit the roundabout onto <STREET_NAMES>.",
         "2": "Exit the roundabout onto <BEGIN_STREET_NAMES>."
       },
-      "empty_street_name_labels": ["the walkway", "the cycleway", "the mountain bike trail"],
+      "empty_street_name_labels": ["人行道", "自行車道", "越野自行車道"],
       "example_phrases": {
-        "0": ["Exit the roundabout."],
+        "0": ["離開圓環。"],
         "1": ["Exit the roundabout onto Philadelphia Road, Maryland 7."],
         "2": ["Exit the roundabout onto Catoctin Mountain Highway, U.S. 15."]
       }
     },
     "enter_ferry": {
       "phrases": {
-        "0": "Take the Ferry.",
-        "1": "Take the <STREET_NAMES>.",
-        "2": "Take the <STREET_NAMES> <FERRY_LABEL>."
+        "0": "搭乘渡輪。",
+        "1": "搭乘 <STREET_NAMES> 。",
+        "2": "搭乘 <STREET_NAMES> <FERRY_LABEL>。"
       },
-      "empty_street_name_labels": ["the walkway", "the cycleway", "the mountain bike trail"],
-      "ferry_label": "Ferry",
+      "empty_street_name_labels": ["人行道", "自行車道", "越野自行車道"],
+      "ferry_label": "渡輪",
       "example_phrases": {
-        "0": ["Take the Ferry."],
-        "1": ["Take the Millersburg Ferry."],
-        "2": ["Take the Bridgeport - Port Jefferson Ferry."]
+        "0": ["搭乘渡輪。"],
+        "1": ["搭乘 Millersburg 渡輪。"],
+        "2": ["搭乘 Bridgeport - Port Jefferson 渡輪。"]
       }
     },
     "enter_ferry_verbal": {
       "phrases": {
-        "0": "Take the Ferry.",
-        "1": "Take the <STREET_NAMES>.",
-        "2": "Take the <STREET_NAMES> <FERRY_LABEL>."
+        "0": "搭乘渡輪。",
+        "1": "搭乘 <STREET_NAMES> 。",
+        "2": "搭乘 <STREET_NAMES> <FERRY_LABEL>。"
       },
-      "empty_street_name_labels": ["the walkway", "the cycleway", "the mountain bike trail"],
-      "ferry_label": "Ferry",
+      "empty_street_name_labels": ["人行道", "自行車道", "越野自行車道"],
+      "ferry_label": "渡輪",
       "example_phrases": {
-        "0": ["Take the Ferry."],
-        "1": ["Take the Millersburg Ferry."],
-        "2": ["Take the Bridgeport - Port Jefferson Ferry."]
+        "0": ["搭乘渡輪。"],
+        "1": ["搭乘 Millersburg 渡輪。"],
+        "2": ["搭乘 Bridgeport - Port Jefferson 渡輪。"]
       }
     },
     "exit_ferry": {
       "phrases": {
         "0": "Head <CARDINAL_DIRECTION>.",
         "1": "Head <CARDINAL_DIRECTION> on <STREET_NAMES>.",
-        "2": "Head <CARDINAL_DIRECTION> on <BEGIN_STREET_NAMES>. Continue on <STREET_NAMES>.",
+        "2": "Head <CARDINAL_DIRECTION> on <BEGIN_STREET_NAMES>. 繼續沿 <STREET_NAMES> 行駛。",
         "4": "Drive <CARDINAL_DIRECTION>.",
         "5": "Drive <CARDINAL_DIRECTION> on <STREET_NAMES>.",
-        "6": "Drive <CARDINAL_DIRECTION> on <BEGIN_STREET_NAMES>. Continue on <STREET_NAMES>.",
+        "6": "Drive <CARDINAL_DIRECTION> on <BEGIN_STREET_NAMES>. 繼續沿 <STREET_NAMES> 行駛。",
         "8": "Walk <CARDINAL_DIRECTION>.",
         "9": "Walk <CARDINAL_DIRECTION> on <STREET_NAMES>.",
-        "10": "Walk <CARDINAL_DIRECTION> on <BEGIN_STREET_NAMES>. Continue on <STREET_NAMES>.",
+        "10": "Walk <CARDINAL_DIRECTION> on <BEGIN_STREET_NAMES>. 繼續沿 <STREET_NAMES> 行駛。",
         "16": "Bike <CARDINAL_DIRECTION>.",
         "17": "Bike <CARDINAL_DIRECTION> on <STREET_NAMES>.",
-        "18": "Bike <CARDINAL_DIRECTION> on <BEGIN_STREET_NAMES>. Continue on <STREET_NAMES>."
+        "18": "Bike <CARDINAL_DIRECTION> on <BEGIN_STREET_NAMES>. 繼續沿 <STREET_NAMES> 行駛。"
       },
-      "cardinal_directions": ["north", "northeast", "east", "southeast", "south", "southwest", "west", "northwest"],
-      "empty_street_name_labels": ["the walkway", "the cycleway", "the mountain bike trail"],
+      "cardinal_directions": ["北", "東北", "東", "東南", "南", "西南", "西", "西北"],
+      "empty_street_name_labels": ["人行道", "自行車道", "越野自行車道"],
       "example_phrases": {
         "0": ["Head southeast."],
         "1": ["Head west on Ferry Lane"],
@@ -695,8 +695,8 @@
         "17": "Bike <CARDINAL_DIRECTION> on <STREET_NAMES>.",
         "18": "Bike <CARDINAL_DIRECTION> on <BEGIN_STREET_NAMES>."
       },
-      "cardinal_directions": ["north", "northeast", "east", "southeast", "south", "southwest", "west", "northwest"],
-      "empty_street_name_labels": ["the walkway", "the cycleway", "the mountain bike trail"],
+      "cardinal_directions": ["北", "東北", "東", "東南", "南", "西南", "西", "西北"],
+      "empty_street_name_labels": ["人行道", "自行車道", "越野自行車道"],
       "example_phrases": {
         "0": ["Head southeast."],
         "1": ["Head west on Ferry Lane"],
@@ -714,110 +714,110 @@
     },
     "transit_connection_start": {
       "phrases": {
-        "0": "Enter the station.",
+        "0": "進入車站。",
         "1": "Enter the <TRANSIT_STOP>.",
         "2": "Enter the <TRANSIT_STOP> <STATION_LABEL>."
       },
-      "station_label": "Station",
+      "station_label": "站",
       "example_phrases": {
-        "0": ["Enter the station."],
+        "0": ["進入車站。"],
         "1": ["Enter the Embarcadero Station."],
         "2": ["Enter the 8 St - NYU Station."]
       }
     },
     "transit_connection_start_verbal": {
       "phrases": {
-        "0": "Enter the station.",
+        "0": "進入車站。",
         "1": "Enter the <TRANSIT_STOP>.",
         "2": "Enter the <TRANSIT_STOP> <STATION_LABEL>."
       },
-      "station_label": "Station",
+      "station_label": "站",
       "example_phrases": {
-        "0": ["Enter the station."],
+        "0": ["進入車站。"],
         "1": ["Enter the Embarcadero Station."],
         "2": ["Enter the 8 St - NYU Station."]
       }
     },
     "transit_connection_transfer": {
       "phrases": {
-        "0": "Transfer at the station.",
-        "1": "Transfer at the <TRANSIT_STOP>.",
+        "0": "在車站換乘。",
+        "1": "在 <TRANSIT_STOP> 換乘。",
         "2": "Transfer at the <TRANSIT_STOP> <STATION_LABEL>."
       },
-      "station_label": "Station",
+      "station_label": "站",
       "example_phrases": {
-        "0": ["Transfer at the station."],
+        "0": ["在車站換乘。"],
         "1": ["Transfer at the Embarcadero Station."],
         "2": ["Transfer at the 8 St - NYU Station."]
       }
     },
     "transit_connection_transfer_verbal": {
       "phrases": {
-        "0": "Transfer at the station.",
-        "1": "Transfer at the <TRANSIT_STOP>.",
+        "0": "在車站換乘。",
+        "1": "在 <TRANSIT_STOP> 換乘。",
         "2": "Transfer at the <TRANSIT_STOP> <STATION_LABEL>."
       },
-      "station_label": "Station",
+      "station_label": "站",
       "example_phrases": {
-        "0": ["Transfer at the station."],
+        "0": ["在車站換乘。"],
         "1": ["Transfer at the Embarcadero Station."],
         "2": ["Transfer at the 8 St - NYU Station."]
       }
     },
     "transit_connection_destination": {
       "phrases": {
-        "0": "Exit the station.",
+        "0": "離開車站。",
         "1": "Exit the <TRANSIT_STOP>.",
         "2": "Exit the <TRANSIT_STOP> <STATION_LABEL>."
       },
-      "station_label": "Station",
+      "station_label": "站",
       "example_phrases": {
-        "0": ["Exit the station."],
+        "0": ["離開車站。"],
         "1": ["Exit the Embarcadero Station."],
         "2": ["Exit the 8 St - NYU Station."]
       }
     },
     "transit_connection_destination_verbal": {
       "phrases": {
-        "0": "Exit the station.",
+        "0": "離開車站。",
         "1": "Exit the <TRANSIT_STOP>.",
         "2": "Exit the <TRANSIT_STOP> <STATION_LABEL>."
       },
-      "station_label": "Station",
+      "station_label": "站",
       "example_phrases": {
-        "0": ["Exit the station."],
+        "0": ["離開車站。"],
         "1": ["Exit the Embarcadero Station."],
         "2": ["Exit the 8 St - NYU Station."]
       }
     },
     "depart": {
       "phrases": {
-        "0": "Depart: <TIME>.",
-        "1": "Depart: <TIME> from <TRANSIT_STOP>."
+        "0": "出發: <TIME>.",
+        "1": "出發: <TIME> 從 <TRANSIT_STOP>。"
       },
       "example_phrases": {
-        "0": ["Depart: 8:02 AM."],
-        "1": ["Depart: 8:02 AM from 8 St - NYU."]
+        "0": ["出發: 8:02 AM."],
+        "1": ["出發: 8:02 AM 從 8 St - NYU。"]
       }
     },
     "depart_verbal": {
       "phrases": {
         "0": "Depart at <TIME>.",
-        "1": "Depart at <TIME> from <TRANSIT_STOP>."
+        "1": "Depart at <TIME> 從 <TRANSIT_STOP>。"
       },
       "example_phrases": {
         "0": ["Depart at 8:02 AM."],
-        "1": ["Depart at 8:02 AM from 8 St - NYU."]
+        "1": ["Depart at 8:02 AM 從 8 St - NYU。"]
       }
     },
     "arrive": {
       "phrases": {
-        "0": "Arrive: <TIME>.",
-        "1": "Arrive: <TIME> at <TRANSIT_STOP>."
+        "0": "抵達: <TIME>.",
+        "1": "抵達: <TIME> at <TRANSIT_STOP>."
       },
       "example_phrases": {
-        "0": ["Arrive: 8:02 AM."],
-        "1": ["Arrive: 8:02 AM at 8 St - NYU."]
+        "0": ["抵達: 8:02 AM."],
+        "1": ["抵達: 8:02 AM at 8 St - NYU."]
       }
     },
     "arrive_verbal": {
@@ -832,25 +832,25 @@
     },
     "transit": {
       "phrases": {
-        "0": "Take the <TRANSIT_NAME>. (<TRANSIT_STOP_COUNT> <TRANSIT_STOP_COUNT_LABEL>)",
-        "1": "Take the <TRANSIT_NAME> toward <TRANSIT_HEADSIGN>. (<TRANSIT_STOP_COUNT> <TRANSIT_STOP_COUNT_LABEL>)"
+        "0": "搭乘 <TRANSIT_NAME>. (<TRANSIT_STOP_COUNT> <TRANSIT_STOP_COUNT_LABEL>)",
+        "1": "搭乘 <TRANSIT_NAME> toward <TRANSIT_HEADSIGN>. (<TRANSIT_STOP_COUNT> <TRANSIT_STOP_COUNT_LABEL>)"
       },
-      "empty_transit_name_labels": ["tram", "metro", "train", "bus", "ferry", "cable car", "gondola", "funicular"],
-      "transit_stop_count_labels": {"one": "stop", "other": "stops"},
+      "empty_transit_name_labels": ["路面電車", "地下鐵", "火車", "巴士", "渡輪", "纜車", "索道", "纜索鐵路"],
+      "transit_stop_count_labels": {"one": "站", "other": "站"},
       "example_phrases": {
-        "0": ["Take the New Haven. (1 stop)", "Take the metro. (2 stops)", "Take the bus. (12 stops)"],
-        "1": ["Take the F toward JAMAICA - 179 ST. (10 stops)", "Take the ferry toward Staten Island. (1 stop)"]
+        "0": ["搭乘 New Haven. (1 stop)", "搭乘 metro. (2 stops)", "搭乘 bus. (12 stops)"],
+        "1": ["搭乘 F toward JAMAICA - 179 ST. (10 stops)", "搭乘 ferry toward Staten Island. (1 stop)"]
       }
     },
     "transit_verbal": {
       "phrases": {
-        "0": "Take the <TRANSIT_NAME>.",
-        "1": "Take the <TRANSIT_NAME> toward <TRANSIT_HEADSIGN>."
+        "0": "搭乘 <TRANSIT_NAME>.",
+        "1": "搭乘 <TRANSIT_NAME> toward <TRANSIT_HEADSIGN>."
       },
-      "empty_transit_name_labels": ["tram", "metro", "train", "bus", "ferry", "cable car", "gondola", "funicular"],
+      "empty_transit_name_labels": ["路面電車", "地下鐵", "火車", "巴士", "渡輪", "纜車", "索道", "纜索鐵路"],
       "example_phrases": {
-        "0": ["Take the New Haven."],
-        "1": ["Take the F toward JAMAICA - 179 ST."]
+        "0": ["搭乘 New Haven."],
+        "1": ["搭乘 F toward JAMAICA - 179 ST."]
       }
     },
     "transit_remain_on": {
@@ -858,8 +858,8 @@
         "0": "Remain on the <TRANSIT_NAME>. (<TRANSIT_STOP_COUNT> <TRANSIT_STOP_COUNT_LABEL>)",
         "1": "Remain on the <TRANSIT_NAME> toward <TRANSIT_HEADSIGN>. (<TRANSIT_STOP_COUNT> <TRANSIT_STOP_COUNT_LABEL>)"
       },
-      "empty_transit_name_labels": ["tram", "metro", "train", "bus", "ferry", "cable car", "gondola", "funicular"],
-      "transit_stop_count_labels": {"one": "stop", "other": "stops"},
+      "empty_transit_name_labels": ["路面電車", "地下鐵", "火車", "巴士", "渡輪", "纜車", "索道", "纜索鐵路"],
+      "transit_stop_count_labels": {"one": "站", "other": "站"},
       "example_phrases": {
         "0": ["Remain on the New Haven. (1 stop)", "Remain on the train. (3 stops)"],
         "1": ["Remain on the F toward JAMAICA - 179 ST. (10 stops)"]
@@ -870,7 +870,7 @@
         "0": "Remain on the <TRANSIT_NAME>.",
         "1": "Remain on the <TRANSIT_NAME> toward <TRANSIT_HEADSIGN>."
       },
-      "empty_transit_name_labels": ["tram", "metro", "train", "bus", "ferry", "cable car", "gondola", "funicular"],
+      "empty_transit_name_labels": ["路面電車", "地下鐵", "火車", "巴士", "渡輪", "纜車", "索道", "纜索鐵路"],
       "example_phrases": {
         "0": ["Remain on the New Haven."],
         "1": ["Remain on the F toward JAMAICA - 179 ST."]
@@ -878,44 +878,44 @@
     },
     "transit_transfer": {
       "phrases": {
-        "0": "Transfer to take the <TRANSIT_NAME>. (<TRANSIT_STOP_COUNT> <TRANSIT_STOP_COUNT_LABEL>)",
-        "1": "Transfer to take the <TRANSIT_NAME> toward <TRANSIT_HEADSIGN>. (<TRANSIT_STOP_COUNT> <TRANSIT_STOP_COUNT_LABEL>)"
+        "0": "Transfer to 搭乘 <TRANSIT_NAME>. (<TRANSIT_STOP_COUNT> <TRANSIT_STOP_COUNT_LABEL>)",
+        "1": "Transfer to 搭乘 <TRANSIT_NAME> toward <TRANSIT_HEADSIGN>. (<TRANSIT_STOP_COUNT> <TRANSIT_STOP_COUNT_LABEL>)"
       },
-      "empty_transit_name_labels": ["tram", "metro", "train", "bus", "ferry", "cable car", "gondola", "funicular"],
-      "transit_stop_count_labels": {"one": "stop", "other": "stops"},
+      "empty_transit_name_labels": ["路面電車", "地下鐵", "火車", "巴士", "渡輪", "纜車", "索道", "纜索鐵路"],
+      "transit_stop_count_labels": {"one": "站", "other": "站"},
       "example_phrases": {
-        "0": ["Transfer to take the New Haven. (1 stop)", "Transfer to take the tram. (4 stops)"],
-        "1": ["Transfer to take the F toward JAMAICA - 179 ST. (10 stops)"]
+        "0": ["Transfer to 搭乘 New Haven. (1 stop)", "Transfer to 搭乘 tram. (4 stops)"],
+        "1": ["Transfer to 搭乘 F toward JAMAICA - 179 ST. (10 stops)"]
       }
     },
     "transit_transfer_verbal": {
       "phrases": {
-        "0": "Transfer to take the <TRANSIT_NAME>.",
-        "1": "Transfer to take the <TRANSIT_NAME> toward <TRANSIT_HEADSIGN>."
+        "0": "Transfer to 搭乘 <TRANSIT_NAME>.",
+        "1": "Transfer to 搭乘 <TRANSIT_NAME> toward <TRANSIT_HEADSIGN>."
       },
-      "empty_transit_name_labels": ["tram", "metro", "train", "bus", "ferry", "cable car", "gondola", "funicular"],
+      "empty_transit_name_labels": ["路面電車", "地下鐵", "火車", "巴士", "渡輪", "纜車", "索道", "纜索鐵路"],
       "example_phrases": {
-        "0": ["Transfer to take the New Haven."],
-        "1": ["Transfer to take the F toward JAMAICA - 179 ST."]
+        "0": ["Transfer to 搭乘 New Haven."],
+        "1": ["Transfer to 搭乘 F toward JAMAICA - 179 ST."]
       }
     },
     "post_transit_connection_destination": {
       "phrases": {
         "0": "Head <CARDINAL_DIRECTION>.",
         "1": "Head <CARDINAL_DIRECTION> on <STREET_NAMES>.",
-        "2": "Head <CARDINAL_DIRECTION> on <BEGIN_STREET_NAMES>. Continue on <STREET_NAMES>.",
+        "2": "Head <CARDINAL_DIRECTION> on <BEGIN_STREET_NAMES>. 繼續沿 <STREET_NAMES> 行駛。",
         "4": "Drive <CARDINAL_DIRECTION>.",
         "5": "Drive <CARDINAL_DIRECTION> on <STREET_NAMES>.",
-        "6": "Drive <CARDINAL_DIRECTION> on <BEGIN_STREET_NAMES>. Continue on <STREET_NAMES>.",
+        "6": "Drive <CARDINAL_DIRECTION> on <BEGIN_STREET_NAMES>. 繼續沿 <STREET_NAMES> 行駛。",
         "8": "Walk <CARDINAL_DIRECTION>.",
         "9": "Walk <CARDINAL_DIRECTION> on <STREET_NAMES>.",
-        "10": "Walk <CARDINAL_DIRECTION> on <BEGIN_STREET_NAMES>. Continue on <STREET_NAMES>.",
+        "10": "Walk <CARDINAL_DIRECTION> on <BEGIN_STREET_NAMES>. 繼續沿 <STREET_NAMES> 行駛。",
         "16": "Bike <CARDINAL_DIRECTION>.",
         "17": "Bike <CARDINAL_DIRECTION> on <STREET_NAMES>.",
-        "18": "Bike <CARDINAL_DIRECTION> on <BEGIN_STREET_NAMES>. Continue on <STREET_NAMES>."
+        "18": "Bike <CARDINAL_DIRECTION> on <BEGIN_STREET_NAMES>. 繼續沿 <STREET_NAMES> 行駛。"
       },
-      "cardinal_directions": ["north", "northeast", "east", "southeast", "south", "southwest", "west", "northwest"],
-      "empty_street_name_labels": ["the walkway", "the cycleway", "the mountain bike trail"],
+      "cardinal_directions": ["北", "東北", "東", "東南", "南", "西南", "西", "西北"],
+      "empty_street_name_labels": ["人行道", "自行車道", "越野自行車道"],
       "example_phrases": {
         "0": ["Head west."],
         "1": ["Head northeast on Broadway"],
@@ -946,8 +946,8 @@
         "17": "Bike <CARDINAL_DIRECTION> on <STREET_NAMES>.",
         "18": "Bike <CARDINAL_DIRECTION> on <BEGIN_STREET_NAMES>."
       },
-      "cardinal_directions": ["north", "northeast", "east", "southeast", "south", "southwest", "west", "northwest"],
-      "empty_street_name_labels": ["the walkway", "the cycleway", "the mountain bike trail"],
+      "cardinal_directions": ["北", "東北", "東", "東南", "南", "西南", "西", "西北"],
+      "empty_street_name_labels": ["人行道", "自行車道", "越野自行車道"],
       "example_phrases": {
         "0": ["Head west."],
         "1": ["Head northeast on Broadway"],
@@ -968,11 +968,11 @@
         "0": "Continue for <LENGTH>.",
         "1": "Continue on <STREET_NAMES> for <LENGTH>."
       },
-      "metric_lengths": ["<KILOMETERS> kilometers", "1 kilometer", "a half kilometer", "<METERS> meters", "less than 10 meters"],
-      "us_customary_lengths": ["<MILES> miles", "1 mile", "a half mile", "<TENTHS_OF_MILE> tenths of a mile", "1 tenth of a mile", "<FEET> feet", "less than 10 feet"],
-      "empty_street_name_labels": ["the walkway", "the cycleway", "the mountain bike trail"],
+      "metric_lengths": ["<KILOMETERS> 公里", "1 公里", "1/2 公里", "<METERS> 公尺", "少於 10 公尺"],
+      "us_customary_lengths": ["<MILES> 英里", "1 英里", "1/2 英里", "<TENTHS_OF_MILE>/10 英里", "1/10 英里", "<FEET> 英呎", "少於 10 英呎"],
+      "empty_street_name_labels": ["人行道", "自行車道", "越野自行車道"],
       "example_phrases": {
-        "0": ["Continue for 300 feet.", "Continue for 9 miles."],
+        "0": ["繼續直行 300 英呎。", "Continue for 9 miles."],
         "1": ["Continue on Pennsylvania 7 43 for 6.2 miles.", "Continue on Main Street, Vermont 30 for 1 tenth of a mile."]
       }
     },
@@ -980,7 +980,7 @@
       "phrases": {
         "0": "Travel <TRANSIT_STOP_COUNT> <TRANSIT_STOP_COUNT_LABEL>."
       },
-      "transit_stop_count_labels": {"one": "stop", "other": "stops"},
+      "transit_stop_count_labels": {"one": "站", "other": "站"},
       "example_phrases": {
         "0": ["Travel 1 stop.", "Travel 3 stops."]
       }
